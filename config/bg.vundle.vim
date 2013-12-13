@@ -1,5 +1,5 @@
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'} "y a zen
 " Emmet {{{1
@@ -21,6 +21,7 @@ set laststatus=2   " Always show the statusline
 "set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 " }}}
 Bundle 'rayburgemeestre/phpfolding.vim'
+"let g:DisableAutoPHPFolding = 1
 Bundle 'vitalk/vim-lesscss'
 " NerdTree {{{1
 Bundle 'scrooloose/nerdtree'
@@ -38,9 +39,9 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=26
 "noremap <silent> <Leader> :TagbarToggle<CR>
 nmap <F5> <ESC>:TagbarToggle<CR>
-Bundle 'vim-php/tagbar-phpctags.vim'
-let g:tagbar_phpctags_bin='/usr/local/bin/phpctags'
-let g:tagbar_phpctags_memory_limit = '128M'
+"Bundle 'vim-php/tagbar-phpctags.vim'
+"let g:tagbar_phpctags_bin='/usr/local/bin/phpctags'
+"let g:tagbar_phpctags_memory_limit = '128M'
 " }}}
 " SelectBuf {{{1
 Bundle 'SelectBuf'
@@ -83,6 +84,15 @@ endfunction
 nnoremap <F8> :call ToggleNERDTreeAndTagbar()<CR>
 " }}}
 Bundle 'matthias-guenther/vim-autocomplete'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Shougo/unite.vim'
+Bundle 'benmills/vimux'
+"{{{
+"Bundle 'rking/ag.vim'
+"let g:agprg='<custom-ag-path-goes-here> --column'
+Bundle 'mileszs/ack.vim'
+let g:ackprg = 'ag --nogroup --nocolor --column'
+"}}}
 Bundle 'scrooloose/syntastic'
 " CtrlP {{{1 
 Bundle 'L9'
@@ -131,27 +141,27 @@ Bundle 'snipMate'
 Bundle 'bronson/vim-trailing-whitespace'
 
 " VimWiki {{{1
-Bundle 'vimwiki'
-map <F8> <Plug>Vimwiki2HTML<CR>
-map <M-F8> <Plug>VimwikiAll2HTML<CR>
-
-let g:vimwiki_use_mouse = 1
-
-let wiki_1 = {}
-let wiki_1.path = 'E:/Profiles/Documents/VimWiki/gwiki/'
-let wiki_1.path_html = 'E:/Profiles/Documents/VimWiki/gwiki/html/'
-"let wiki_1.html_header = 'E:/Profiles/Documents/VimWiki/gwiki/template/header.tpl'
-let wiki_1.html_template = 'E:/Profiles/Documents/VimWiki/gwiki/template/tmpl.html'
-"let wiki_1.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
-
-let wiki_2 = {}
-let wiki_2.syntax = 'markdown'
-let wiki_2.ext = '.mkd'
-let wiki_2.custom_wiki2html = 'E:\programs\dev\Vim\vimfiles\bundle\vimwiki.dev\autoload\vimwiki\customwiki2html.bat'
-let wiki_2.path = 'E:/Profiles/Documents/VimWiki/mkd/'
-let wiki_2.path_html = 'E:/Profiles/Documents/VimWiki/mkd/html/'
-
-let g:vimwiki_list = [wiki_1, wiki_2]
+" Bundle 'vimwiki'
+" map <F8> <Plug>Vimwiki2HTML<CR>
+" map <M-F8> <Plug>VimwikiAll2HTML<CR>
+"
+" let g:vimwiki_use_mouse = 1
+"
+" let wiki_1 = {}
+" let wiki_1.path = 'E:/Profiles/Documents/VimWiki/gwiki/'
+" let wiki_1.path_html = 'E:/Profiles/Documents/VimWiki/gwiki/html/'
+" "let wiki_1.html_header = 'E:/Profiles/Documents/VimWiki/gwiki/template/header.tpl'
+" let wiki_1.html_template = 'E:/Profiles/Documents/VimWiki/gwiki/template/tmpl.html'
+" "let wiki_1.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+"
+" let wiki_2 = {}
+" let wiki_2.syntax = 'markdown'
+" let wiki_2.ext = '.mkd'
+" let wiki_2.custom_wiki2html = 'E:\programs\dev\Vim\vimfiles\bundle\vimwiki.dev\autoload\vimwiki\customwiki2html.bat'
+" let wiki_2.path = 'E:/Profiles/Documents/VimWiki/mkd/'
+" let wiki_2.path_html = 'E:/Profiles/Documents/VimWiki/mkd/html/'
+"
+" let g:vimwiki_list = [wiki_1, wiki_2]
 " }}}
 
 " non github repos

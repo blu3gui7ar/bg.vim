@@ -1,3 +1,8 @@
+"let c_minlines=200
+"syntax sync minlines=200
+"noremap <F12> <Esc>:syntax sync fromstart<CR>
+"inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
 source ~/.vim/config/bg.vundle.vim
 
 "ruby
@@ -12,7 +17,7 @@ let g:mapleader = "," "设置全局快捷键为,
 
 " disable VI's compatible mode..
 set nocompatible
- 
+
 set encoding=utf-8
 "set termencoding=utf-8 " no use for win32 gui
 map <C-F1> <ESC>:simalt~<CR>
@@ -23,7 +28,7 @@ set tenc=utf-8
 source $VIMRUNTIME/delmenu.vim
 language messages zh_CN.utf-8
 
- 
+
 " use chinese help
 set helplang=cn
 
@@ -62,7 +67,7 @@ endif
 
 set background=dark
 " Enable syntax highlight
-syntax enable
+syntax on
  
 " Show line number
 set nu
@@ -168,17 +173,15 @@ autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
-map <leader>bg <ESC>:edit ~/.vim/config/bg._vimrc<CR>
+map <leader>bg <ESC>:edit ~/.vim/config/bg.vimrc<CR>
 " Edit and Reload .vimrc files
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
 
-set foldmethod=marker
+"set foldmethod=marker
 " save folding
 "au BufWinLeave * silent! mkview
 "au BufWinEnter * silent! loadview
-
-filetype plugin indent on
 
 "Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
@@ -196,5 +199,3 @@ map <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
 " Normal mode: <Leader>t
 map <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
-
-"nmap <silent> <unique> <leader>xx <Plug>SelectBuf
