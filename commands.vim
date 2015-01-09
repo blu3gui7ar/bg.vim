@@ -1,6 +1,7 @@
 "========================================}{
 " clip board
 Plugin 'YankRing.vim'
+let g:yankring_max_history = 100
 nnoremap <silent> <F4> :YRShow<CR>
 nnoremap <silent> <D-y> :YRShow<CR>
 let g:yankring_replace_n_pkey = '<m-p>'
@@ -27,7 +28,4 @@ let g:multi_cursor_start_key='<C-m>'
 Plugin 'terryma/vim-expand-region'
 "map + <Plug>(expand_region_expand)
 "map _ <Plug>(expand_region_shrink)
-"========================================}{
-Plugin 'yegappan/mru'
-nnoremap <silent> <D-r> :MRU<CR>
 "========================================}{

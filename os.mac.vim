@@ -1,3 +1,4 @@
+set macmeta
 set guifont=Monaco:h14
 
 "Use Experimental Renderer option must be enabled for transparency
