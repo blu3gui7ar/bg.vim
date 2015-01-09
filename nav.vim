@@ -7,6 +7,7 @@ Plugin 'terryma/vim-expand-region'
 
 " in workspace {{{
 "Plugin 'Shougo/unite.vim'
+Plugin 'yegappan/mru'
 
 " CtrlP
 Plugin 'L9'
