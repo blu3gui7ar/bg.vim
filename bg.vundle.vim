@@ -21,7 +21,6 @@ source ~/.vim/config/commands.vim
 source ~/.vim/config/blu3gui7ar.vim
 "source ~/.vim/config/deprecated.vim
 
-Plugin 'genutils'
 
 " non github repos
 " Plugin 'git://git.wincent.com/command-t.git'
