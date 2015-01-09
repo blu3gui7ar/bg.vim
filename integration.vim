@@ -11,6 +11,8 @@ Plugin 'Shougo/vimproc.vim'
 map <Leader>vp :exec "VimProcBang " . input("Command: ")<CR>
 map <Leader>vl :exec "VimProcRead" . input("Command: ")<CR>
 "========================================}{
+Plugin 'Shougo/vimshell.vim'
+"========================================}{
 Plugin 'rking/ag.vim'
 let g:agprg='ag --nogroup --nocolor --column'
 nnoremap <Leader>ag :Ag -U -G
