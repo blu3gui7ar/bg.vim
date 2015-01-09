@@ -24,6 +24,9 @@ set helplang=cn
 "set gui options
 if has("gui_running")
     source ~/.vim/config/gui.vim
+    if has("gui_macvim")
+        source ~/.vim/config/mac.vim
+    end
 else
     source ~/.vim/config/cmd.vim
 endif
