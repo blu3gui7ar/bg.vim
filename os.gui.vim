@@ -14,7 +14,7 @@ colorscheme solarized
 "colorscheme molokai
 
 " Show tabs and newline characters with ,s
-nmap <Leader>s :set list!<CR>
+nmap <leader>sl :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 "Invisible character colors
 "highlight NonText guifg=#4a4a59

@@ -58,7 +58,7 @@ noremap <silent> <C-l>  :call BgBNext()<CR>
 function! BgQuitBuffer()
     let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
     if index(l:ignoreft, &filetype) >= 0
-        quit
+        q
         return
     endif
 
@@ -75,24 +75,27 @@ nnoremap <silent> <leader>q :call BgQuitBuffer()<CR>
 
 "=====================================================================
 "type S, then type what you're looking for, a /, and what to replace it with
-nmap S :%s//g<LEFT><LEFT>
-vmap S :s//g<LEFT><LEFT>
+nnoremap <leader>S :%s//g<LEFT><LEFT>
+vnoremap <leader>S :s//g<LEFT><LEFT>
 "=====================================================================
 " Opens an edit command with the path of the currently edited file filled in Normal mode: <Leader>ee
-map <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
 " Opens a tab edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>t
-map <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 "=====================================================================
-map <leader>bg <ESC>:edit ~/.vim/config/bg.vimrc<CR>
+nnoremap <leader>bg <ESC>:edit ~/.vim/config/bg.vimrc<CR>
 " Edit and Reload .vimrc files
-nmap <silent> <Leader>ev :e $MYVIMRC<CR>
-nmap <silent> <Leader>es :so $MYVIMRC<CR>
+nnoremap <silent> <Leader>es :so $MYVIMRC<CR>
 "=====================================================================
 "Following line clears the search highlights when pressing ,b
-nnoremap <leader>b :nohlsearch<CR>
+nnoremap <leader>nl :nohlsearch<CR>
 "=====================================================================
 "set tags=tags;
 "map <F12> ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-map <Leader>ct :! /usr/local/bin/ctags -R --exclude=node_modules *<CR>
+nnoremap <Leader>ct :! /usr/local/bin/ctags -R --exclude=node_modules *<CR>
+"=====================================================================
+" goto quick fix errors
+nnoremap <C-P> :cp<cr>
+nnoremap <C-N> :cn<cr>
 "=====================================================================

@@ -25,6 +25,7 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 "========================================}{
 Plugin 'scrooloose/nerdtree'
 map <F2> <ESC>:NERDTreeToggle<CR>
+noremap <D-n> <ESC>:NERDTreeToggle<CR>
 map <Leader>n <ESC>:NERDTreeFind<CR>
 " These prevent accidentally loading files while in the NERDTree panel
 "autocmd FileType nerdtree noremap <buffer> <c-left> <nop>
@@ -45,6 +46,7 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=26
 "noremap <silent> <Leader> :TagbarToggle<CR>
 nmap <F5> <ESC>:TagbarToggle<CR>
+nnoremap <D-t> <ESC>:TagbarToggle<CR>
 "========================================}{
 "Plugin 'Lokaltog/powerline'
 Plugin 'bling/vim-airline'
