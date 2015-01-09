@@ -19,7 +19,6 @@ source ~/.vim/config/integration.vim
 source ~/.vim/config/interface.vim
 source ~/.vim/config/commands.vim
 source ~/.vim/config/blu3gui7ar.vim
-"source ~/.vim/config/vimwiki.vim
 "source ~/.vim/config/deprecated.vim
 
 Plugin 'genutils'
