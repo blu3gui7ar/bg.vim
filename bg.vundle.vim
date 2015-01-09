@@ -9,6 +9,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Categories according to http://vimawesome.com
+" Find help on http://vimcasts.org/
 source ~/.vim/config/other.vim
 source ~/.vim/config/language.vim
 source ~/.vim/config/completion.vim
