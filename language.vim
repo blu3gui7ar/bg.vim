@@ -1,36 +1,31 @@
-"au FileType html,python,vim,javascript setl shiftwidth=4
-"au FileType html,python,vim,javascript setl tabstop=4
-"au FileType java,php setl shiftwidth=4
-"au FileType java,php setl tabstop=4
-
+"========================================}{
+Plugin 'tpope/vim-surround'
+"========================================}{
 Plugin 'chrisbra/csv.vim'
+"========================================}{
 Plugin 'awk-support.vim'
-" Plugin 'vitalk/vim-lesscss'
-" Plugin 'tpope/vim-rails'
+"========================================}{
 Plugin 'elzr/vim-json'
-
-" JS {{{
-" Plugin 'Enhanced-Javascript-syntax'
-Plugin 'Better-Javascript-Indentation'
-" Plugin 'indentfolds'
-" }}}
-
-" PHP {{{
+"========================================}{
+Plugin 'pangloss/vim-javascript'
+"========================================}{
+" Zen
+Plugin 'mattn/emmet-vim'
+" activation key <C-Y><leader>
+"let g:user_zen_expandabbr_key = '<c-j>'
+"let g:use_zen_complete_tag = 1
+"let g:no_html_toolbar = 'yes'
+"let g:html_tag_case = 'lowercase'
+"========================================}{
+" PHP
 Plugin 'rayburgemeestre/phpfolding.vim'
 "let g:DisableAutoPHPFolding = 1
-
+"========================================}{
 " Twig
 Plugin 'beyondwords/vim-twig'
 autocmd BufNewFile,BufRead *.twig.htm set filetype=html.twig
-
-" Deprecated due to performance on big php file
-"Plugin 'vim-php/tagbar-phpctags.vim'
-"let g:tagbar_phpctags_bin='/usr/local/bin/phpctags'
-"let g:tagbar_phpctags_memory_limit = '128M'
-"}}}
-
-
-" golang {{{
+"========================================}{
+" golang
 au FileType go nmap <Leader>ct :! gotags -R . > tags<CR>
 Plugin 'fatih/vim-go'
 au FileType go nmap <Leader>s <Plug>(go-implements)
@@ -83,4 +78,4 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : '~/.go/bin/gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
-" }}}
+"========================================}{

@@ -1,7 +1,11 @@
+"========================================}{
+" syntax check
+Plugin 'scrooloose/syntastic'
+"========================================}{
 " iterm2 and tmux Ding
 Plugin 'sjl/vitality.vim'
-
-" tmux pane for commands {{{
+"========================================}{
+" tmux pane for commands 
 Plugin 'benmills/vimux'
  " Run the current file with rspec
  map <Leader>rb :call VimuxRunCommand("clear; rspec " . bufname("%"))<CR>
@@ -16,6 +20,12 @@ Plugin 'benmills/vimux'
  map <Leader>vx :VimuxInterruptRunner<CR>
  " Zoom the runner pane (use <bind-key> z to restore runner pane)
  map <Leader>vz :call VimuxZoomRunner()<CR>
- "}}}
-
-"Plugin 'Conque-Shell'
+"========================================}{
+Plugin 'tpope/vim-fugitive'
+"========================================}{
+Plugin 'Shougo/vimproc.vim'
+"========================================}{
+Plugin 'rking/ag.vim'
+let g:agprg='ag --nogroup --nocolor --column'
+nnoremap <Leader>ag :Ag -U -G
+"========================================}{

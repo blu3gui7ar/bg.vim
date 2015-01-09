@@ -1,41 +1,4 @@
-" git
-"Plugin 'tpope/vim-fugitive'
-
-Plugin 'bronson/vim-trailing-whitespace'
-nnoremap <silent> <leader>fw :FixWhitespace<CR>
-
-" YankRing {{{1
-Plugin 'YankRing.vim'
-nnoremap <silent> <F4> :YRShow<CR>
-nnoremap <silent> <leader>yr :YRShow<CR>
-" }}}
-
-" syntax check
-Plugin 'scrooloose/syntastic'
-
-" code format - easyalign {{{
-Plugin 'junegunn/vim-easy-align'
-vnoremap <silent> <Enter> :EasyAlign<Enter>
-""ino <c-k> <c-r>=TriggerSnippet()<cr>
-""snor <c-k> <esc>i<right><c-r>=TriggerSnippet()<cr>
-" }}}
-
-" run buffer with #! as a script
-" Plugin 'bexec'
-
-" Zen {{{
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'} "yet another zen
-Plugin 'mattn/emmet-vim'
-" activation key <C-Y><leader>
-"let g:user_zen_expandabbr_key = '<c-j>'
-"let g:use_zen_complete_tag = 1
-"let g:no_html_toolbar = 'yes'
-"let g:html_tag_case = 'lowercase'
-" }}}
-
-
-" Snippets {{{
-"Plugin 'snipMate'
+"========================================}{
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 " Plugin key-mappings.
@@ -60,12 +23,7 @@ endif
 " Tell Neosnippet about the other snippets
 "Plugin "honza/vim-snippets"
 "let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-"}}}
-
-" Auto completion {{{
-"Plugin AutoComplPop
-"Plugin 'matthias-guenther/vim-autocomplete'
-"Plugin 'Valloric/YouCompleteMe'
+"========================================}{
 Plugin 'Shougo/neocomplete'
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Use neocomplete.
@@ -148,5 +106,5 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 "let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-"}}}
+"========================================}{
 

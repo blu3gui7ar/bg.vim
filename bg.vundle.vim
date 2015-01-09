@@ -9,11 +9,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-source ~/.vim/config/appearance.vim
-source ~/.vim/config/coding.vim
+source ~/.vim/config/other.vim
+source ~/.vim/config/language.vim
+source ~/.vim/config/completion.vim
+source ~/.vim/config/code_display.vim
 source ~/.vim/config/integration.vim
-source ~/.vim/config/nav.vim
-source ~/.vim/config/languages.vim
+source ~/.vim/config/interface.vim
+source ~/.vim/config/commands.vim
+source ~/.vim/config/blu3gui7ar.vim
 "source ~/.vim/config/vimwiki.vim
 "source ~/.vim/config/deprecated.vim
 

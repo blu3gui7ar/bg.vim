@@ -11,6 +11,3 @@ if has("gui_macvim")
     "set shell=/usr/bin/login\ -f
     "set shell=/bin/bash\ -c\ /bin/zsh
 endif
-
-highlight Folded guifg=#FFFFFF guibg=#000000
-highlight FoldColumn guifg=#FFFFFF guibg=#000000
