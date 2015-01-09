@@ -5,7 +5,7 @@ Plugin 'scrooloose/syntastic'
 " iterm2 and tmux Ding
 Plugin 'sjl/vitality.vim'
 "========================================}{
-" tmux pane for commands 
+" tmux pane for commands
 Plugin 'benmills/vimux'
  " Run the current file with rspec
  map <Leader>rb :call VimuxRunCommand("clear; rspec " . bufname("%"))<CR>
