@@ -58,10 +58,8 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 let g:airline#extensions#tabline#fnamemod = ':p:t'
 let g:airline#extensions#tabline#close_symbol = 'X'
-"set laststatus=2   " Always show the statusline
-"set encoding=utf-8 " Necessary to show unicode glyphs
-" Note: If you're using an 88/256-color terminal but still don't see the colored statusline, you may have to set the following option as well: >
-"set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
+" show airline without nerdtree
+set laststatus=2   " Always show the statusline
 
 " alternative
 "set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P

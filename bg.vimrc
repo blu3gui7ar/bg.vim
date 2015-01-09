@@ -7,7 +7,7 @@ let g:mapleader = "," "设置全局快捷键为,
 
 source ~/.vim/config/bg.vundle.vim
 
-set encoding=utf-8
+set encoding=utf-8 " Necessary to show unicode glyphs
 "set termencoding=utf-8 " no use for win32 gui
 map <C-F1> <ESC>:simalt~<CR>
 set fileencoding=utf-8
