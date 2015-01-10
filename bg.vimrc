@@ -77,7 +77,7 @@ set showcmd
 "{{{ folding
 set foldmethod=syntax
 set foldlevelstart=0
-set foldminlines=5
+"set foldminlines=5
 set foldnestmax=2
 
 let javaScript_fold=1         " JavaScript
