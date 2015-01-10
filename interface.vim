@@ -25,6 +25,8 @@ nnoremap <D-P> :CtrlPFunky<Cr>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 "========================================}{
 Plugin 'scrooloose/nerdtree'
+" directory search with ag
+Plugin 'taiansu/nerdtree-ag'
 map <F2> <ESC>:NERDTreeToggle<CR>
 noremap <D-n> <ESC>:NERDTreeToggle<CR>
 map <Leader>n <ESC>:NERDTreeFind<CR>
