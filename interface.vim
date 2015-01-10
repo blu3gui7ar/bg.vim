@@ -4,7 +4,8 @@
 Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 let g:ctrlp_map = '<D-p>'
-let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_max_depth = 40
 let g:ctrlp_max_files = 10000
 
