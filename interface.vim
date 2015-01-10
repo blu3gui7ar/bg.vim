@@ -48,18 +48,24 @@ let g:tagbar_width=26
 nmap <F5> <ESC>:TagbarToggle<CR>
 nnoremap <D-t> <ESC>:TagbarToggle<CR>
 "========================================}{
-"Plugin 'Lokaltog/powerline'
 Plugin 'bling/vim-airline'
+" need to run install.sh
+Plugin 'Lokaltog/powerline-fonts'
+let g:airline_powerline_fonts = 1
 "Plugin 'bling/vim-bufferline'
 "let g:airline#extensions#bufferline#enabled = 1
 "let g:airline#extensions#bufferline#overwrite_variables = 1
 
+let g:airline_theme = "molokai"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 let g:airline#extensions#tabline#fnamemod = ':p:t'
 let g:airline#extensions#tabline#close_symbol = 'X'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
 " show airline without nerdtree
 set laststatus=2   " Always show the statusline
 

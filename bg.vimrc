@@ -76,6 +76,8 @@ set nowb
 set noswapfile
 " smart backspace
 set backspace=start,indent,eol
+" for Operator-pending-mode
+set showcmd
 
 "{{{ folding
 set foldmethod=syntax

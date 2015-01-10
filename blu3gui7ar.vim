@@ -99,3 +99,7 @@ nnoremap <Leader>ct :! /usr/local/bin/ctags -R --exclude=node_modules *<CR>
 nnoremap <C-P> :cp<cr>
 nnoremap <C-N> :cn<cr>
 "=====================================================================
+" :Man for K
+runtime! ftplugin/man.vim
+"=====================================================================
+

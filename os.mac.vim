@@ -1,5 +1,6 @@
 set macmeta
-set guifont=Monaco:h14
+"set guifont=Monaco:h14
+set guifont=Source\ Code\ Pro\ For\ Powerline:h14
 
 "Use Experimental Renderer option must be enabled for transparency
 " Swipe to move between buffers :D

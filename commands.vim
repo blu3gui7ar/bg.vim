@@ -23,7 +23,7 @@ Plugin 'matchit.zip'
 
 " need to 'v' to normal mode before editing using i I a ...
 Plugin 'terryma/vim-multiple-cursors'
-let g:multi_cursor_start_key='<C-m>'
+let g:multi_cursor_start_key='<F6>'
 
 Plugin 'terryma/vim-expand-region'
 "map + <Plug>(expand_region_expand)
