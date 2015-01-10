@@ -41,15 +41,23 @@ endfunction
 nnoremap <F8> :call ToggleNERDTreeAndTagbar()<CR>
 function! BgBPrev()
     let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
-    if index(l:ignoreft, &filetype) < 0
-        bprev
+    if index(l:ignoreft, &filetype) >= 0
+        return
     endif
+    bprev
+    while index(l:ignoreft, &filetype) >= 0
+        bprev
+    endwhile
 endfunction
 function! BgBNext()
     let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
-    if index(l:ignoreft, &filetype) < 0
-        bnext
+    if index(l:ignoreft, &filetype) >= 0
+        return
     endif
+    bnext
+    while index(l:ignoreft, &filetype) >= 0
+        bnext
+    endwhile
 endfunction
 noremap <silent> <C-left> :call BgBPrev()<CR>
 noremap <silent> <C-h> :call BgBPrev()<CR>
@@ -101,5 +109,9 @@ nnoremap <C-N> :cn<cr>
 "=====================================================================
 " :Man for K
 runtime! ftplugin/man.vim
+nmap K <leader>K
+"=====================================================================
+" Folding easy
+nmap <C-_> zA
 "=====================================================================
 
