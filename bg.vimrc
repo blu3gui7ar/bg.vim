@@ -78,7 +78,7 @@ set showcmd
 set foldmethod=syntax
 set foldlevelstart=0
 "set foldminlines=5
-set foldnestmax=2
+"set foldnestmax=2
 
 let javaScript_fold=1         " JavaScript
 let perl_fold=1               " Perl

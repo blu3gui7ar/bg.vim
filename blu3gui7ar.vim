@@ -40,47 +40,39 @@ function! ToggleNERDTreeAndTagbar()
 endfunction
 nnoremap <F8> :call ToggleNERDTreeAndTagbar()<CR>
 function! BgBPrev()
-    let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
-    if index(l:ignoreft, &filetype) >= 0
+    if !&modifiable
         return
     endif
     bprev
-    while index(l:ignoreft, &filetype) >= 0
-        bprev
-    endwhile
 endfunction
 function! BgBNext()
-    let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
-    if index(l:ignoreft, &filetype) >= 0
+    if !&modifiable
         return
     endif
     bnext
-    while index(l:ignoreft, &filetype) >= 0
-        bnext
-    endwhile
 endfunction
 noremap <silent> <C-left> :call BgBPrev()<CR>
 noremap <silent> <C-h> :call BgBPrev()<CR>
 noremap <silent> <C-right> :call BgBNext()<CR>
 noremap <silent> <C-l>  :call BgBNext()<CR>
 function! BgQuitBuffer()
-    let l:ignoreft = ["qf","godoc","nerdtree","tagbar"]
-    if index(l:ignoreft, &filetype) >= 0
+    if !&modifiable
         q
         return
     endif
-
     let l:cbnr = bufnr('%')
-    bp
-    while index(l:ignoreft, &filetype) >= 0
-        bp
+    bprev
+    while !&modifiable
+        if l:cbnr == bufnr('%')
+            break
+        endif
+        bprev
     endwhile
     if l:cbnr != bufnr('%')
         exec 'bd' . l:cbnr
     endif
 endfunction
 nnoremap <silent> <leader>q :call BgQuitBuffer()<CR>
-
 "=====================================================================
 "type S, then type what you're looking for, a /, and what to replace it with
 nnoremap <leader>S :%s//g<LEFT><LEFT>
@@ -112,6 +104,16 @@ runtime! ftplugin/man.vim
 nmap K <leader>K
 "=====================================================================
 " Folding easy
-nmap <C-_> zA
+nmap <C-_> za
+"=====================================================================
+" change dir quick
+nnoremap cd :call BgCD()<CR>
+function! BgCD()
+    let l:path = input("Target:", expand("%:p:h"), "dir")
+    if l:path != ""
+        exec "cd ". l:path
+        NERDTreeCWD
+endif
+endfunction
 "=====================================================================
 
