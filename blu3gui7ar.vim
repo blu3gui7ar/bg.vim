@@ -44,12 +44,20 @@ function! BgBPrev()
         return
     endif
     bprev
+    let l:cbnr = bufnr('%')
+    while !&modifiable && l:cbnr != bufnr('%')
+        bprev
+    endwhile
 endfunction
 function! BgBNext()
     if !&modifiable
         return
     endif
+    let l:cbnr = bufnr('%')
     bnext
+    while !&modifiable && l:cbnr != bufnr('%')
+        bnext
+    endwhile
 endfunction
 noremap <silent> <C-left> :call BgBPrev()<CR>
 noremap <silent> <C-h> :call BgBPrev()<CR>
@@ -104,7 +112,7 @@ runtime! ftplugin/man.vim
 nmap K <leader>K
 "=====================================================================
 " Folding easy
-nmap <C-_> za
+nmap <C-_> zA
 "=====================================================================
 " change dir quick
 nnoremap cd :call BgCD()<CR>

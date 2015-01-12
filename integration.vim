@@ -1,6 +1,10 @@
 "========================================}{
 " syntax check
 Plugin 'scrooloose/syntastic'
+" avoid close quickfix/location-list on error on <CR>
+" for other plugins, E.g.  ag.vim
+" use :Errors to open syntastic error list
+let g:syntastic_auto_loc_list = 0
 "========================================}{
 " iterm2 and tmux Ding
 Plugin 'sjl/vitality.vim'
