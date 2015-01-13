@@ -10,6 +10,7 @@ let g:syntastic_auto_loc_list = 0
 Plugin 'sjl/vitality.vim'
 "========================================}{
 " git
+" U for revert file from git, undocumented
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 "========================================}{

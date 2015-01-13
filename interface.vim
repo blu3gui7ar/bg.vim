@@ -1,4 +1,7 @@
 "========================================}{
+Plugin 'sjl/gundo.vim'
+nnoremap <F3> :GundoToggle<CR>
+"========================================}{
 " CtrlP
 "Plugin 'FuzzyFinder'
 Plugin 'kien/ctrlp.vim'
