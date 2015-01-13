@@ -73,6 +73,8 @@ set noswapfile
 set backspace=start,indent,eol
 " for Operator-pending-mode
 set showcmd
+" selection behave
+set selection inclusive
 
 "{{{ folding
 set foldmethod=syntax
