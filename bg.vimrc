@@ -73,12 +73,19 @@ set noswapfile
 set backspace=start,indent,eol
 " for Operator-pending-mode
 set showcmd
-" selection behave
-set selection inclusive
+" selection behave, default: inclusive
+set selection=exclusive
+
+"{{{ undo tree
+set undodir="~/.vim/undo/
+set undofile
+"}}}
 
 "{{{ folding
 set foldmethod=syntax
-set foldlevelstart=0
+"do not fold on start
+set nofoldenable
+"set foldlevelstart=0
 "set foldminlines=5
 "set foldnestmax=2
 

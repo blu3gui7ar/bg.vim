@@ -5,6 +5,10 @@ Plugin 'scrooloose/syntastic'
 " for other plugins, E.g.  ag.vim
 " use :Errors to open syntastic error list
 let g:syntastic_auto_loc_list = 0
+let g:syntastic_mode_map = {
+            \ "mode": "active",
+            \ "active_filetypes": [],
+            \ "passive_filetypes": ["php"] }
 "========================================}{
 " iterm2 and tmux Ding
 Plugin 'sjl/vitality.vim'

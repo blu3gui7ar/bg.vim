@@ -43,8 +43,8 @@ function! BgBPrev()
     if !&modifiable
         return
     endif
-    bprev
     let l:cbnr = bufnr('%')
+    bprev
     while !&modifiable && l:cbnr != bufnr('%')
         bprev
     endwhile
