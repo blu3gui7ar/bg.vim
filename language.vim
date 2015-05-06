@@ -9,6 +9,8 @@ Plugin 'elzr/vim-json'
 "========================================}{
 Plugin 'pangloss/vim-javascript'
 "========================================}{
+Plugin 'derekwyatt/vim-scala'
+"========================================}{
 " Zen
 Plugin 'mattn/emmet-vim'
 " activation key <C-Y><leader>
