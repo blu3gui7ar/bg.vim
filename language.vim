@@ -8,6 +8,7 @@ Plugin 'awk-support.vim'
 Plugin 'elzr/vim-json'
 "========================================}{
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 "========================================}{
 Plugin 'derekwyatt/vim-scala'
 "========================================}{
