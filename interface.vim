@@ -7,8 +7,8 @@ nnoremap <F3> :GundoToggle<CR>
 Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 let g:ctrlp_map = '<D-p>'
-"let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_max_depth = 40
 let g:ctrlp_max_files = 10000
 
@@ -19,7 +19,7 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 "let g:ctrlp_user_command = 'find %s -type f'
-"let g:ctrlp_root_markers = ['.agignore']
+let g:ctrlp_root_markers = ['.agignore']
 "let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:30'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['funky']

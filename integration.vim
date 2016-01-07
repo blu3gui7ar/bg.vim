@@ -26,7 +26,7 @@ Plugin 'Shougo/vimshell.vim'
 "========================================}{
 Plugin 'rking/ag.vim'
 "let g:agprg="ag --nogroup --column"
-let g:aghighlight=1
+let g:ag_highlight=1
 " use Ag! for quickfix instead of LAg! for location-list
 " to avoid change Nerdtree windows
 nnoremap <Leader>ag :Ag!

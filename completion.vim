@@ -26,6 +26,8 @@ endif
 "========================================}{
 Plugin 'Shougo/neocomplete'
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+let g:neocomplete#enable_cursor_hold_i = 1
+let g:neocomplete#cursor_hold_i_time = 1000 " in msec
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.

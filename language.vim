@@ -1,6 +1,13 @@
 "========================================}{
 Plugin 'tpope/vim-surround'
 "========================================}{
+"Plugin 'posva/vim-vue'
+Plugin 'darthmall/vim-vue'
+"========================================}{
+"Plugin 'digitaltoad/vim-jade'
+"========================================}{
+"Plugin 'wavded/vim-stylus'
+"========================================}{
 Plugin 'chrisbra/csv.vim'
 "========================================}{
 Plugin 'awk-support.vim'
@@ -9,6 +16,7 @@ Plugin 'elzr/vim-json'
 "========================================}{
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+"Plugin 'kchmck/vim-coffee-script'
 "========================================}{
 Plugin 'derekwyatt/vim-scala'
 "========================================}{
