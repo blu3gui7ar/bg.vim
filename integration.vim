@@ -29,5 +29,9 @@ Plugin 'rking/ag.vim'
 let g:ag_highlight=1
 " use Ag! for quickfix instead of LAg! for location-list
 " to avoid change Nerdtree windows
-nnoremap <Leader>ag :Ag!
+"nnoremap <Leader>ag :Ag!
+"========================================}{
+Plugin 'b4b4r07/vim-pt'
+"let g:pt_args = "pt --nogroup --smart-case"
+nnoremap <Leader>ag :Pt!
 "========================================}{
