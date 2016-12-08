@@ -45,16 +45,17 @@ let NERDTreeWinSize=30
 let NERDTreeChDirMode=2     "setting root dir in NT also sets VIM's cd
 let g:NERDTreeBookmarksSort = 0
 "========================================}{
-Plugin 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 " http://adamyoung.net/Exuberant-Ctags-OS-X
 " http://www.vim.org/scripts/script.php?script_id=273
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=26
+"let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+"let g:tagbar_width=26
 "noremap <silent> <Leader> :TagbarToggle<CR>
-nmap <F5> <ESC>:TagbarToggle<CR>
-nnoremap <D-t> <ESC>:TagbarToggle<CR>
+"nmap <F5> <ESC>:TagbarToggle<CR>
+"nnoremap <D-t> <ESC>:TagbarToggle<CR>
 "========================================}{
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " need to run install.sh
 Plugin 'Lokaltog/powerline-fonts'
 let g:airline_powerline_fonts = 1

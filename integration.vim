@@ -32,6 +32,6 @@ let g:ag_highlight=1
 "nnoremap <Leader>ag :Ag!
 "========================================}{
 Plugin 'b4b4r07/vim-pt'
-"let g:pt_args = "pt --nogroup --smart-case"
+"let g:pt_args = "pt --nogroup --smart-case --home-ptignore"
 nnoremap <Leader>ag :Pt!
 "========================================}{
