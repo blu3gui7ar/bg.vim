@@ -4,6 +4,7 @@ Plugin 'scrooloose/syntastic'
 " avoid close quickfix/location-list on error on <CR>
 " for other plugins, E.g.  ag.vim
 " use :Errors to open syntastic error list
+nnoremap <Leader>sc :SyntasticCheck<CR>
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_mode_map = {
             \ "mode": "active",
